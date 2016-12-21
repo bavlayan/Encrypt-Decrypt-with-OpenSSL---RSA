@@ -20,8 +20,8 @@ int main() {
     char *encrypt = NULL;
     char *decrypt = NULL;
 
-    char private_key_pem[12] = "key_priv";
-    char public_key_pem[11]  = "key_pub";
+    char private_key_pem[12] = "private_key";
+    char public_key_pem[11]  = "public_key";
 
     LOG(KEY_LENGTH);
     LOG(PUBLIC_EXPONENT);
