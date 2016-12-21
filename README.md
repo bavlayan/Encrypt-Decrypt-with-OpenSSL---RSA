@@ -40,3 +40,16 @@ Message can be 4. m = 4 <br />
 **Encrypt message:** c = 4^7 mod (33) = 16384 mod (33) and c = 16. Encrypted message is 16 <br />
 **Decrypt message:** m = 16^3 mod (33) = 4096 mod (33) and m = 4. Decrypted message is 4 <br />
 
+## Project Code
+This project encrypts and decrypts message in a simple way. Let's examine *openssl_rsa.h* file. <br />
+
+`create_RSA` function creates public_key.pem and private_key.pem file. Public_key.pem file is used to encrypt message. Private_key.pem file is used to decrypt message. <br />
+
+`public_encrypt` function encrypts message using public_key.pem file <br />
+
+`private_decrypt` function decrypts encrypted message using private_key.pem <br />
+
+`create_encrypted_file` function creates encryted file as .bin file.
+
+
+
