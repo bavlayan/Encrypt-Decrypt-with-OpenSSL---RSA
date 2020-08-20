@@ -1,5 +1,5 @@
 /*
- * @author  Batuhan AVLAYAN - iletisim@batuhanavlayan.com
+ * @author  Batuhan AVLAYAN - b.avlayan@gmail.com
  * @version V1.0
  * @brief   This file declares a programming API for OpenSSL RSA encryption and decryption operations.
  */
