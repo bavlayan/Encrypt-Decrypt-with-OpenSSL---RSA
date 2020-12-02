@@ -51,5 +51,18 @@ This project encrypts and decrypts message in a simple way. Let's examine *opens
 
 `create_encrypted_file` function creates encryted file as .bin file.
 
+## Compilation Process
+For compile the entire project
+```sh
+ make
+```
 
+For clean the project directory
+```sh
+ make clean
+```
 
+For clean the project directory and remove generated files during execution
+```sh
+ make deep_clean
+```
