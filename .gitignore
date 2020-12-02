@@ -1,0 +1,11 @@
+.vscode
+
+*.o
+*.txt
+*.bin
+*.patch
+
+private_key
+public_key
+
+rsa_encrypt_decrypt
