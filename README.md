@@ -2,7 +2,7 @@
 
 ## What is OpenSSL ?
 OpenSSL is opensource library that provide secure communication over networks using TLS (Transfer Secure Layer) and SSL (Secure Socket Layer). 
-It supports many cryptographic algorithm AES, DSA, RSA, SHA1, SHA2, MD5.. More information about [OpenSSL] (https://en.wikipedia.org/wiki/OpenSSL) 
+It supports many cryptographic algorithm AES, DSA, RSA, SHA1, SHA2, MD5.. More information about [OpenSSL](https://en.wikipedia.org/wiki/OpenSSL) 
 
 ## What is RSA ? 
 RSA is algorithm using for encrypting and decrypting data. 
@@ -11,7 +11,7 @@ Asymmetric cryptographic algorithm has two different keys.
 They are *public key and private key*. Public key is given everyone. 
 Private key is secret. 
 Data is encrypted by public key then decrypted by private key.
-More information about [RSA Algorithm] (https://simple.wikipedia.org/wiki/RSA_(algorithm)) 
+More information about [RSA Algorithm](https://simple.wikipedia.org/wiki/RSA_(algorithm)) 
 
 ## Steps of RSA Algorithm
 **1 -** Define two different prime numbers. ( p and q) <br />
