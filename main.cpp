@@ -20,13 +20,30 @@ int main() {
     char *encrypt = NULL;
     char *decrypt = NULL;
 
+    RSA *keypair = NULL;
+    BIGNUM *bne = NULL;
+    int ret = 0;
+
     char private_key_pem[12] = "private_key";
     char public_key_pem[11]  = "public_key";
 
     LOG(KEY_LENGTH);
     LOG(PUBLIC_EXPONENT);
     
-    RSA *keypair = RSA_generate_key(KEY_LENGTH, PUBLIC_EXPONENT, NULL, NULL);
+    // RSA *keypair = RSA_generate_key(KEY_LENGTH, PUBLIC_EXPONENT, NULL, NULL); //Old
+
+    bne = BN_new();
+    ret = BN_set_word(bne, PUBLIC_EXPONENT);
+    if (ret != 1) {
+        // goto free_stuff;
+        LOG("An error occurred in BN_set_word() method");
+    }
+    keypair = RSA_new();
+    ret = RSA_generate_key_ex(keypair, KEY_LENGTH, bne, NULL);
+    if (ret != 1) {
+        // goto free_stuff;
+        LOG("An error occurred in RSA_generate_key_ex() method");
+    }
     LOG("Generate key has been created.");
 
     private_key = create_RSA(keypair, PRIVATE_KEY_PEM, private_key_pem);
@@ -62,6 +79,7 @@ int main() {
     free(public_key);
     free(encrypt);
     free(decrypt);
+    BN_free(bne);
     LOG("OpenSSL_RSA has been finished.");
 
     return 0;
