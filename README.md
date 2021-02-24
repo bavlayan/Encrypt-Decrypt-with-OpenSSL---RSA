@@ -66,3 +66,15 @@ For clean the project directory and remove generated files during execution
 ```sh
  make deep_clean
 ```
+
+## Docker build and run
+
+For docker build to create an image named opensslapp
+```
+docker build --tag opensslapp .
+```
+
+For run image as container
+```
+docker run -i -t --rm opensslapp
+```

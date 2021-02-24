@@ -16,7 +16,7 @@ int main() {
     RSA *private_key;
     RSA *public_key;
 
-    char message[KEY_LENGTH / 8] = "Batuhan AVLAYAN - OpenSSL_RSA demo";
+    char message[KEY_LENGTH / 8] = "Plain text";
     char *encrypt = NULL;
     char *decrypt = NULL;
 
